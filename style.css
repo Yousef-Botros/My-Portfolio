@@ -78,11 +78,67 @@ input:focus, textarea:focus { border-color: var(--primary); outline: none; }
     .bottom-nav { min-width: 90%; }
 }
 @media (max-width: 768px) {
-    .GitHub-btn, .LinkedIn-btn { 
-        margin-top: 20px;
+    .hero-buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
     }
-    nav, .navbar {
+
+    .hero-buttons a:first-child {
+        flex: 0 0 100%;
+        margin-bottom: 5px;
+    }
+
+    .hero-buttons a:not(:first-child) {
+        flex: 1;
+        max-width: 140px;
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+
+    .bottom-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        width: 92%; 
+        left: 50%;
+        transform: translateX(-50%); 
+        min-width: auto; 
+        
+        padding: 8px 12px;
         bottom: 20px;
-        padding: 10px 0;
+        box-sizing: border-box; 
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .contact-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+        margin: 0 !important;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content; 
+    }
+
+    .logo {
+        font-size: 16px;
     }
 }
