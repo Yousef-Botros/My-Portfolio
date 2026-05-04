@@ -77,3 +77,12 @@ input:focus, textarea:focus { border-color: var(--primary); outline: none; }
     .form-row { grid-template-columns: 1fr; }
     .bottom-nav { min-width: 90%; }
 }
+@media (max-width: 768px) {
+    .GitHub-btn, .LinkedIn-btn { 
+        margin-top: 20px;
+    }
+    nav, .navbar {
+        bottom: 20px;
+        padding: 10px 0;
+    }
+}
